@@ -5,7 +5,9 @@
 Os seguintes comandos permiten ver a estrutura e datos dunha BD simulando unha GUI na ventana de comandos.
 
 ## DESCRIBE
-`DESCRIBE` proporciona información sobre as columanas dunha táboa. Sintaxis:
+`DESCRIBE` proporciona información sobre as columanas dunha táboa. 
+
+Sintaxis:
 
 ```SQL
 	{DESCRIBE | DESC} tbl_name [col_name | wild];

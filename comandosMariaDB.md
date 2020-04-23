@@ -1,5 +1,5 @@
 # Comandos de MariaDB: simular unha GUI
-
+![captura3](https://)
 **Nota inicial**: todos os exemplos deste documento pertencen á [web oficial de MariaDB](https://mariadb.com/kb/es/comandos-sql/) e á táboa `naves_espaciais`.
 
 Os seguintes comandos permiten ver a estrutura e datos dunha BD simulando unha GUI na ventana de comandos.

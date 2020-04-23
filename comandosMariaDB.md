@@ -7,7 +7,7 @@ Os seguintes comandos permiten ver a estrutura e datos dunha BD simulando unha G
 ## DESCRIBE
 `DESCRIBE` proporciona información sobre as columanas dunha táboa. 
 
-Sintaxis:
+**Sintaxis**:
 
 ```SQL
 	{DESCRIBE | DESC} tbl_name [col_name | wild];
@@ -17,7 +17,7 @@ Sintaxis:
 ## EXPLAIN
 `EXPLAIN` pode ser usado como un sinónimo de `DESCRIBE` ou coma una forma de obter información sobre como MariaDB executa una instrución `SELECT`.
 
-Sintaxis:
+**Sintaxis**:
 ```SQL
 	 EXPLAIN tbl_name;
 ```
@@ -29,7 +29,7 @@ O comando `SHOW` ten unha gran cantidad de formas que proporcionan información 
 ### SHOW DATABASES 
 `SHOW DATABASES` lista todas as BD creadas no servidor de MariaDB. Seu sinónimo é `SHOW SCHEMAS`.
 
-Sintaxis: 
+**Sintaxis**: 
 ```SQL
 	SHOW {DATABASES | SCHEMAS}
     		[LIKE 'pattern' | WHERE expr];
@@ -41,7 +41,7 @@ Sintaxis:
 ### SHOW CREATE DATABASE 
 `SHOW CREATE DATABASE` mostra a declaración de `CREATE DATABASE` que crea a base de datos dada. Seu sinónimo é `SHOW CREATE SCHEMA`.
 
-Sintaxis:
+**Sintaxis**:
 ```SQL
 	SHOW CREATE {DATABASE | SCHEMA} db_name;
 ```
@@ -50,7 +50,7 @@ Sintaxis:
 ### SHOW TABLES
 `SHOW TABLES` lista todas as táboas dunha BD determinada.
 
-Sintaxis: 
+**Sintaxis**: 
 ```SQL
 	SHOW [FULL] TABLES [FROM db_name]
    	 [LIKE 'pattern' | WHERE expr];
@@ -60,7 +60,7 @@ Sintaxis:
 ### SHOW CREATE TABLE
 `SHOW CREATE TABLE` mostra a declaración de `CREATE TABLE` que crea a táboa dada.
 
-Sintaxis:
+**Sintaxis**:
 ```SQL
 	SHOW CREATE TABLE tbl_name;
 ```
@@ -69,7 +69,7 @@ Sintaxis:
 ### SHOW TABLE STATUS
 `SHOW TABLE STATUS` funciona como `SHOW TABLES` pero proporciona información máis extensa sobre cada táboa.
 
-Sintaxis:
+**Sintaxis**:
 ```SQL
 	SHOW TABLE STATUS [{FROM | IN} db_name]
  	   [LIKE 'pattern' | WHERE expr];
@@ -81,7 +81,7 @@ Sintaxis:
 ### SHOW COLUMNS
 `SHOW COLUMNS` mostra información sobre as columnas dunha táboa determinada. 
 
-Sintaxis:
+**Sintaxis**:
 ```SQL
 	SHOW [FULL] {COLUMNS | FIELDS} FROM tbl_name [FROM db_name]
    	 [LIKE 'pattern' | WHERE expr];
@@ -91,7 +91,7 @@ Sintaxis:
 ### SHOW VARIABLES
 `SHOW VARIABLES` mostra os valores das variables do sistema MariaDB.
 
-Sintaxis:
+**Sintaxis**:
 ```SQL
 	SHOW [GLOBAL | SESSION] VARIABLES
    	 [LIKE 'pattern' | WHERE expr];
@@ -101,9 +101,9 @@ Sintaxis:
 ![exemplo](https://github.com/pmareque/MariaDB-T4-Metauso/blob/master/show-variables.PNG)
 
 ### SHOW WARNINGS
-`SHOW WARNINGS` mostra as mensaxes de error, advertencia(**warning**) e nota que resultaron da útlima declaración que xenerou mensaxes. Non mostra nada se a última declaración utilizou unha táboa e no xenerou ningunha mensaxe. Poden contarse o número de warnings co comando `SHOW COUNT(*) WARNINGS`.
+`SHOW WARNINGS` mostra as mensaxes de error, advertencia(**warning**) e nota que resultaron da útlima declaración que xenerou mensaxes. Poden contarse o número de warnings co comando `SHOW COUNT(*) WARNINGS`.
 
-Sintaxis:
+**Sintaxis**:
 ```SQL
 	SHOW WARNINGS [LIMIT [offset,] row_count];
 	SHOW COUNT(*) WARNINGS;
@@ -115,19 +115,19 @@ Sintaxis:
 ### SHOW ERRORS
 A diferenza de `SHOW WARNINGS`, `SHOW ERRORS` só móstra os erros resultantes da última declaración. Poden contarse a cantidade de erros co comando `SHOW COUNT(*) ERRORS`.
 
-Sintaxis:
+**Sintaxis**:
 ```SQL
 	SHOW ERRORS [LIMIT [offset,] row_count];
 	SHOW COUNT(*) ERRORS;  
 ```
-**Exemplo**
+**Exemplo**:
 
 ![exemplo](https://github.com/pmareque/MariaDB-T4-Metauso/blob/master/show-errors.PNG)
 
 ### SHOW OPEN TABLES
 `SHOW OPEN TABLES`  lista as táboas que están actualmente abiertas na caché.
 
-Sintaxis:
+**Sintaxis**:
 ```SQL
 	SHOW OPEN TABLES [FROM db_name]
     	    [LIKE 'pattern' | WHERE expr];
@@ -137,7 +137,7 @@ Sintaxis:
 ## HELP
 `HELP` é usado para conseguir axuda básica coa sintaxis e unha breve descrición da maioría de comandos e funcións. Podemos escribir un texto de búsqueda concreto, ou usar `HELP contents` para ver o listado de categorías de axuda.
 
-Sintaxis: 
+**Sintaxis**: 
 ```SQL
 	HELP algo; (p ej create)
 	HELP contents

@@ -12,7 +12,9 @@ Os seguintes comandos permiten ver a estrutura e datos dunha BD simulando unha G
 ```SQL
 	{DESCRIBE | DESC} tbl_name [col_name | wild];
 ```
-*ej de naves*
+**Exemplo**:
+
+![exemplo]()
 
 ## EXPLAIN
 `EXPLAIN` pode ser usado como un sinónimo de `DESCRIBE` ou coma una forma de obter información sobre como MariaDB executa una instrución `SELECT`.
@@ -21,7 +23,9 @@ Os seguintes comandos permiten ver a estrutura e datos dunha BD simulando unha G
 ```SQL
 	 EXPLAIN tbl_name;
 ```
-*ej de naves*
+**Exemplo**:
+
+![exemplo]()
 
 ## SHOW
 O comando `SHOW` ten unha gran cantidad de formas que proporcionan información sobre bases de datos, táboas, columnas ou información sobre o estado do servidor. Algunhas delas son:
@@ -45,7 +49,9 @@ O comando `SHOW` ten unha gran cantidad de formas que proporcionan información 
 ```SQL
 	SHOW CREATE {DATABASE | SCHEMA} db_name;
 ```
-*ej de naves*
+**Exemplo**:
+
+![exemplo]()
 
 ### SHOW TABLES
 `SHOW TABLES` lista todas as táboas dunha BD determinada.
@@ -55,7 +61,9 @@ O comando `SHOW` ten unha gran cantidad de formas que proporcionan información 
 	SHOW [FULL] TABLES [FROM db_name]
    	 [LIKE 'pattern' | WHERE expr];
 ```
-*ej de naves*
+**Exemplo**:
+
+![exemplo]()
 
 ### SHOW CREATE TABLE
 `SHOW CREATE TABLE` mostra a declaración de `CREATE TABLE` que crea a táboa dada.
@@ -64,7 +72,9 @@ O comando `SHOW` ten unha gran cantidad de formas que proporcionan información 
 ```SQL
 	SHOW CREATE TABLE tbl_name;
 ```
-*ej de naves*
+**Exemplo**:
+
+![exemplo]()
 
 ### SHOW TABLE STATUS
 `SHOW TABLE STATUS` funciona como `SHOW TABLES` pero proporciona información máis extensa sobre cada táboa.
@@ -86,7 +96,9 @@ O comando `SHOW` ten unha gran cantidad de formas que proporcionan información 
 	SHOW [FULL] {COLUMNS | FIELDS} FROM tbl_name [FROM db_name]
    	 [LIKE 'pattern' | WHERE expr];
 ```
-*ej de naves*
+**Exemplo**:
+
+![exemplo]()
 
 ### SHOW VARIABLES
 `SHOW VARIABLES` mostra os valores das variables do sistema MariaDB.
@@ -132,7 +144,9 @@ A diferenza de `SHOW WARNINGS`, `SHOW ERRORS` só móstra os erros resultantes d
 	SHOW OPEN TABLES [FROM db_name]
     	    [LIKE 'pattern' | WHERE expr];
 ```
-*ej de naves?*
+**Exemplo**:
+
+![exemplo]()
 
 ## HELP
 `HELP` é usado para conseguir axuda básica coa sintaxis e unha breve descrición da maioría de comandos e funcións. Podemos escribir un texto de búsqueda concreto, ou usar `HELP contents` para ver o listado de categorías de axuda.

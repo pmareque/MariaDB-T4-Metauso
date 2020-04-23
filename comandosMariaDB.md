@@ -65,7 +65,7 @@ Sintaxis:
 *ej de naves*
 
 ### SHOW TABLE STATUS
-SHOW TABLE STATUS = funciona como `SHOW TABLES` pero proporciona información máIs extensa sobre cada táboa.
+`SHOW TABLE STATUS` funciona como `SHOW TABLES` pero proporciona información máIs extensa sobre cada táboa.
 
 Sintaxis:
 ```SQL
@@ -75,7 +75,7 @@ Sintaxis:
 *ej de mariadb?*
 
 ### SHOW COLUMNS
-`SHOW COLUMNS` = mostra información sobre as columnas dunha táboa determinada. 
+`SHOW COLUMNS` mostra información sobre as columnas dunha táboa determinada. 
 
 Sintaxis:
 ```SQL
@@ -85,7 +85,7 @@ Sintaxis:
 *ej de naves*
 
 ### SHOW VARIABLES
-`SHOW VARIABLES` = mostra os valores das variables do sistema MariaDB.
+`SHOW VARIABLES` mostra os valores das variables do sistema MariaDB.
 
 Sintaxis:
 ```SQL

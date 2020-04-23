@@ -14,7 +14,7 @@ Os seguintes comandos permiten ver a estrutura e datos dunha BD simulando unha G
 ```
 **Exemplo**:
 
-![exemplo]()
+![exemplo](https://github.com/pmareque/MariaDB-T4-Metauso/blob/master/describe.PNG)
 
 ## EXPLAIN
 `EXPLAIN` pode ser usado como un sinónimo de `DESCRIBE` ou coma una forma de obter información sobre como MariaDB executa una instrución `SELECT`.
@@ -25,7 +25,7 @@ Os seguintes comandos permiten ver a estrutura e datos dunha BD simulando unha G
 ```
 **Exemplo**:
 
-![exemplo]()
+![exemplo](https://github.com/pmareque/MariaDB-T4-Metauso/blob/master/explain.PNG)
 
 ## SHOW
 O comando `SHOW` ten unha gran cantidad de formas que proporcionan información sobre bases de datos, táboas, columnas ou información sobre o estado do servidor. Algunhas delas son:
@@ -51,7 +51,7 @@ O comando `SHOW` ten unha gran cantidad de formas que proporcionan información 
 ```
 **Exemplo**:
 
-![exemplo]()
+![exemplo](https://github.com/pmareque/MariaDB-T4-Metauso/blob/master/show-create-database.PNG)
 
 ### SHOW TABLES
 `SHOW TABLES` lista todas as táboas dunha BD determinada.
@@ -63,7 +63,7 @@ O comando `SHOW` ten unha gran cantidad de formas que proporcionan información 
 ```
 **Exemplo**:
 
-![exemplo]()
+![exemplo](https://github.com/pmareque/MariaDB-T4-Metauso/blob/master/show-tables.PNG)
 
 ### SHOW CREATE TABLE
 `SHOW CREATE TABLE` mostra a declaración de `CREATE TABLE` que crea a táboa dada.
@@ -74,7 +74,7 @@ O comando `SHOW` ten unha gran cantidad de formas que proporcionan información 
 ```
 **Exemplo**:
 
-![exemplo]()
+![exemplo](https://github.com/pmareque/MariaDB-T4-Metauso/blob/master/show-create-table.PNG)
 
 ### SHOW TABLE STATUS
 `SHOW TABLE STATUS` funciona como `SHOW TABLES` pero proporciona información máis extensa sobre cada táboa.
@@ -98,7 +98,7 @@ O comando `SHOW` ten unha gran cantidad de formas que proporcionan información 
 ```
 **Exemplo**:
 
-![exemplo]()
+![exemplo](https://github.com/pmareque/MariaDB-T4-Metauso/blob/master/show-columns.PNG)
 
 ### SHOW VARIABLES
 `SHOW VARIABLES` mostra os valores das variables do sistema MariaDB.
@@ -144,15 +144,19 @@ A diferenza de `SHOW WARNINGS`, `SHOW ERRORS` só móstra os erros resultantes d
 	SHOW OPEN TABLES [FROM db_name]
     	    [LIKE 'pattern' | WHERE expr];
 ```
-**Exemplo**:
+**Exemplo (48 filas)**:
 
-![exemplo]()
+![exemplo](https://github.com/pmareque/MariaDB-T4-Metauso/blob/master/show-open-tables.PNG)
 
 ## HELP
 `HELP` é usado para conseguir axuda básica coa sintaxis e unha breve descrición da maioría de comandos e funcións. Podemos escribir un texto de búsqueda concreto, ou usar `HELP contents` para ver o listado de categorías de axuda.
 
 **Sintaxis**: 
 ```SQL
-	HELP algo; (p ej create)
+	HELP "x";
 	HELP contents
 ```
+
+**Exemplo**:
+
+![exemplo](https://github.com/pmareque/MariaDB-T4-Metauso/blob/master/help.PNG)

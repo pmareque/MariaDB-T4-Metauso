@@ -124,9 +124,6 @@ Sintaxis:
 ```
 *ej de naves?*
 
-**SHOW TRIGGERS**
-SHOW TRIGGERS = lista
-
 ## HELP
 `HELP` se usa para conseguir axuda básica coa sintaxis e unha breve descrición da maioría de comandos e funcións. Podemos escribir un texto de búsqueda concreto, ou usar `HELP contents` para ver o listado de categorías de axuda.
 

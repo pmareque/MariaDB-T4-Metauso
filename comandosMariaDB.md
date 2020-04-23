@@ -125,7 +125,7 @@ Sintaxis:
 *ej de naves?*
 
 ## HELP
-`HELP` se usa para conseguir axuda básica coa sintaxis e unha breve descrición da maioría de comandos e funcións. Podemos escribir un texto de búsqueda concreto, ou usar `HELP contents` para ver o listado de categorías de axuda.
+`HELP` é usado para conseguir axuda básica coa sintaxis e unha breve descrición da maioría de comandos e funcións. Podemos escribir un texto de búsqueda concreto, ou usar `HELP contents` para ver o listado de categorías de axuda.
 
 Sintaxis: 
 ```SQL

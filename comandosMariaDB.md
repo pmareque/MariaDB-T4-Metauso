@@ -1,6 +1,6 @@
 # Comandos de MariaDB: simular unha GUI
 
-**Nota inicial**: todos os exemplos deste documento pertencen á [web oficial de MariaDB](https://mariadb.com/kb/es/comandos-sql/) e á táboa `naves_espaciais`.
+**Nota inicial**: todos os exemplos deste documento pertencen á [web oficial de MariaDB](https://mariadb.com/kb/es/comandos-sql/) e á táboa do exercicio DDL2 `naves_espaciais`.
 
 Os seguintes comandos permiten ver a estrutura e datos dunha BD simulando unha GUI na ventana de comandos.
 
@@ -154,7 +154,7 @@ A diferenza de `SHOW WARNINGS`, `SHOW ERRORS` só móstra os erros resultantes d
 **Sintaxis**: 
 ```SQL
 	HELP "x";
-	HELP contents
+	HELP contents;
 ```
 
 **Exemplo**:

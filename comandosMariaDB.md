@@ -1,5 +1,5 @@
 # Comandos de MariaDB: simular unha GUI
-![captura3](https://)
+
 **Nota inicial**: todos os exemplos deste documento pertencen á [web oficial de MariaDB](https://mariadb.com/kb/es/comandos-sql/) e á táboa `naves_espaciais`.
 
 Os seguintes comandos permiten ver a estrutura e datos dunha BD simulando unha GUI na ventana de comandos.
@@ -34,7 +34,9 @@ Sintaxis:
 	SHOW {DATABASES | SCHEMAS}
     		[LIKE 'pattern' | WHERE expr];
 ```
-*ej de mariadb*
+**Exemplo**:
+
+![exemplo](https://github.com/pmareque/MariaDB-T4-Metauso/blob/master/show-databases.PNG)
 
 ### SHOW CREATE DATABASE 
 `SHOW CREATE DATABASE` mostra a declaración de `CREATE DATABASE` que crea a base de datos dada. Seu sinónimo é `SHOW CREATE SCHEMA`.
@@ -65,14 +67,16 @@ Sintaxis:
 *ej de naves*
 
 ### SHOW TABLE STATUS
-`SHOW TABLE STATUS` funciona como `SHOW TABLES` pero proporciona información máIs extensa sobre cada táboa.
+`SHOW TABLE STATUS` funciona como `SHOW TABLES` pero proporciona información máis extensa sobre cada táboa.
 
 Sintaxis:
 ```SQL
 	SHOW TABLE STATUS [{FROM | IN} db_name]
  	   [LIKE 'pattern' | WHERE expr];
 ```
-*ej de mariadb?*
+**Exemplo**:
+
+![exemplo](https://github.com/pmareque/MariaDB-T4-Metauso/blob/master/show-table-status.PNG)
 
 ### SHOW COLUMNS
 `SHOW COLUMNS` mostra información sobre as columnas dunha táboa determinada. 
@@ -92,7 +96,9 @@ Sintaxis:
 	SHOW [GLOBAL | SESSION] VARIABLES
    	 [LIKE 'pattern' | WHERE expr];
 ```
-*ej de mariadb*
+**Exemplo**:
+
+![exemplo](https://github.com/pmareque/MariaDB-T4-Metauso/blob/master/show-variables.PNG)
 
 ### SHOW WARNINGS
 `SHOW WARNINGS` mostra as mensaxes de error, advertencia(**warning**) e nota que resultaron da útlima declaración que xenerou mensaxes. Non mostra nada se a última declaración utilizou unha táboa e no xenerou ningunha mensaxe. Poden contarse o número de warnings co comando `SHOW COUNT(*) WARNINGS`.
@@ -102,7 +108,9 @@ Sintaxis:
 	SHOW WARNINGS [LIMIT [offset,] row_count];
 	SHOW COUNT(*) WARNINGS;
 ```
-*ej de mariadb - division by zero*
+**Exemplo**:
+
+![exemplo](https://github.com/pmareque/MariaDB-T4-Metauso/blob/master/show-warnings.PNG)
 
 ### SHOW ERRORS
 A diferenza de `SHOW WARNINGS`, `SHOW ERRORS` só móstra os erros resultantes da última declaración. Poden contarse a cantidade de erros co comando `SHOW COUNT(*) ERRORS`.
@@ -112,7 +120,9 @@ Sintaxis:
 	SHOW ERRORS [LIMIT [offset,] row_count];
 	SHOW COUNT(*) ERRORS;  
 ```
-*ej de mariadb*
+**Exemplo**
+
+![exemplo](https://github.com/pmareque/MariaDB-T4-Metauso/blob/master/show-errors.PNG)
 
 ### SHOW OPEN TABLES
 `SHOW OPEN TABLES`  lista as táboas que están actualmente abiertas na caché.

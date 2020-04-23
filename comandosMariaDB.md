@@ -1,27 +1,45 @@
+# Comandos de MariaDB: simular unha GUI
 
-# Comandos de MariaDB: simular una GUI
+**Nota inicial**: todos os exemplos deste documento pertencen á [web oficial de MariaDB](https://mariadb.com/kb/es/comandos-sql/) e á táboa `naves_espaciais`.
 
-Nota inicial: todos os exemplos deste documento fan referencia a algúns da web oficial de MariaDB e á táboa `naves_espaciais`.
+Os seguintes comandos permiten ver a estrutura e datos dunha BD simulando unha GUI na ventana de comandos.
 
-DESCRIBE = proporciona información sobre las columanas de una tabla.
-Sintaxis:
+## DESCRIBE
+`DESCRIBE` proporciona información sobre as columanas dunha táboa. Sintaxis:
+
+```SQL
 	{DESCRIBE | DESC} tbl_name [col_name | wild];
+```
 *ej de naves*
 
-EXPLAIN = puede ser usado como un sinónimo de `DESCRIBE` o como una forma de obtener información sobre cómo MariaDB ejecuta una instrucción `SELECT`.
+## EXPLAIN
+`EXPLAIN` pode ser usado como un sinónimo de `DESCRIBE` ou coma una forma de obter información sobre como MariaDB executa una instrución `SELECT`.
+
 Sintaxis:
+```SQL
 	 EXPLAIN tbl_name;
+```
 *ej de naves*
 
----------SHOW------------
+## SHOW
 
-SHOW DATABASES = lista todas las BD creadas en el servidor de MariaDB. Su sinónimo es SHOW SCHEMAS.
+O comando `SHOW` ten unha gran cantidad de formas que proporcionan información sobre bases de datos, táboas, columnas ou información sobre o estado do servidor. Algunhas delas son:
+
+### SHOW DATABASES 
+
+`SHOW DATABASES` lista todas as BD creadas no servidor de MariaDB. Seu sinónimo é `SHOW SCHEMAS`.
+
 Sintaxis: 
+```SQL
 	SHOW {DATABASES | SCHEMAS}
     		[LIKE 'pattern' | WHERE expr];
+```
 *ej de mariadb*
 
-SHOW CREATE DATABASE = muestra la declaración de `CREATE DATABASE` que crea la base de datos dada. Su sinónimo es `SHOW CREATE SCHEMA`.
+### SHOW CREATE DATABASE 
+
+`SHOW CREATE DATABASE` mostra a declaración de `CREATE DATABASE` que crea a base de datos dada. Seu sinónimo é `SHOW CREATE SCHEMA`.
+
 Sintaxis:
 	SHOW CREATE {DATABASE | SCHEMA} db_name;
 *ej de naves*

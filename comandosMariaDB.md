@@ -5,7 +5,7 @@
 Os seguintes comandos permiten ver a estrutura e datos dunha BD simulando unha GUI na ventana de comandos.
 
 ## DESCRIBE
-`DESCRIBE` proporciona información sobre as columanas dunha táboa. 
+`DESCRIBE` proporciona información sobre as columnas dunha táboa. 
 
 **Sintaxis**:
 
@@ -17,7 +17,7 @@ Os seguintes comandos permiten ver a estrutura e datos dunha BD simulando unha G
 ![exemplo](https://github.com/pmareque/MariaDB-T4-Metauso/blob/master/describe.PNG)
 
 ## EXPLAIN
-`EXPLAIN` pode ser usado como un sinónimo de `DESCRIBE` ou coma una forma de obter información sobre como MariaDB executa una instrución `SELECT`.
+`EXPLAIN` pode ser usado como un sinónimo de `DESCRIBE` ou coma unha forma de obter información sobre como MariaDB executa una instrución `SELECT`.
 
 **Sintaxis**:
 ```SQL
